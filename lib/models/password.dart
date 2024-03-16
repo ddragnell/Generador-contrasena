@@ -19,8 +19,6 @@ String generatePassword({
   if (hasNumbers) chars += numbers;
   if (hasSymbols) chars += symbols;
 
-
-  
   var password = List.generate(passwordLength, (index) {
     final int randomIndex = Random.secure().nextInt(chars.length);
     return chars[randomIndex];
